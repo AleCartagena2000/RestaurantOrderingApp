@@ -275,3 +275,10 @@ input {
         background-color: #432620;
     }
 }
+
+@media (max-width: 360px) {
+    .container{
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+}
