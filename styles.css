@@ -1,0 +1,278 @@
+*{box-sizing: border-box;}
+
+body{
+    font-family: 'Smythe', cursive;
+    margin: 0;
+}
+
+.container{
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    max-width: 700px;
+}
+
+.title{
+    font-size: 39px;
+    margin: 0;
+}
+
+.title-subheading{
+    font-size: 22px;
+    margin: 0;
+}
+
+.title .title-subheading {
+    text-shadow: 0 0 2px black;
+}
+
+header{
+    color: #FFF;
+    background-image: url("./burger-bg-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2em 0;
+    margin-bottom: 2em;
+}
+
+.fa-solid{
+    cursor: pointer;
+    opacity: 0.3;
+    
+}
+
+.fa-solid:hover,
+.fa-solid:focus{
+    opacity: 1;
+}
+
+/*                   */
+/* Menu Items Styles */
+/*                   */
+
+/* Menu Item Typography */
+
+.menu-item-title{
+    font-size: 28px;
+    margin: 0;
+    margin-bottom: 0.2em;
+}
+
+.menu-item-ingredient{
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 0.3em
+}
+
+.menu-item-price{
+    font-size: 20px;
+    margin: 0;
+}
+
+/* End of Typography */
+
+.menu-item{
+    /* border: solid black; */
+    border-bottom: 1px solid #D2D2D2;
+    margin-bottom: 2em;
+    display: flex;
+}
+
+.menu-item-emoji{
+    margin-left: -0.14em;
+    font-size: 79px;
+    width: 160px;
+    margin-right: 0.25em;
+    line-height: 1.125;
+}
+
+.menu-item-description{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.plus-icon{
+    align-self: center;
+    font-size: 32px;
+}
+
+/* End of Menu item Styles */
+
+/*                    */
+/* Order Item Styles */
+/*                  */
+
+.hidden{
+    display: none;
+}
+
+.order-items{
+    margin-bottom: 150px;
+}
+
+.order-items-list{
+    border-bottom: 1px solid black;
+}
+
+.order-items-title{
+    font-size: 28px;
+    text-align: center;    
+}
+
+ul{
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.list-item-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25em;
+}
+
+.list-item-container:last-child{
+    margin-bottom: 1em;
+}
+
+.list-item-name, .price-text{
+    font-size: 28px;
+}
+
+.list-item-price, .price{
+    font-size: 20px;
+}
+
+.list-item-price{
+    align-self: end;
+}
+
+.total-price-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4em;
+}
+
+.price-text, .price{
+    margin: 0;
+}
+
+.price{
+    align-self: center;
+}
+
+.list-item-name{
+    display: flex;
+}
+
+.list-item-remove-text{
+    font-family: 'Jost', sans-serif;
+    color: #BBBBBB;
+    font-size: 12px;
+    margin-left: 0.75em;
+    align-self: center;
+    cursor: pointer;
+}
+
+.btn {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    border: 1px solid #16DB99;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 1em 0;
+    background-color: #16DB99;
+    color: #FFF; 
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #ECFDF5;
+    color: #065F46;
+}
+
+/*               */
+/* Modal Styles */
+/*             */
+form{
+    text-align: center;
+}
+
+input {
+    display: inline-block;
+    width: 90%;
+    margin-bottom: 1em;
+    padding: 1em 0;
+    padding-left: 1em;
+}
+
+.last-input{
+    margin-bottom: 3em;
+}
+
+.modal-btn{
+    width: 90%;
+}
+
+.modal-title{
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    font-family: 'Jost', sans-serif;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 400px;
+    width: 90%;
+    max-width: 625px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 2px #666;
+    background-color: #FFF;
+}
+
+/*                 */
+/* Order Complete */
+/*               */
+
+.order-complete {
+    text-align: center;
+    font-size: 24px;
+    background-color: #ECFDF5;
+    color: #065F46;
+    border-radius: 3px;
+    padding: 0.25em 0.75em;
+    margin-bottom: 4em;
+}
+
+/* Media Queries */
+
+@media (min-width: 700px) {
+
+    .title, .title-subheading{
+        text-shadow: 0 0 3px black;
+    }
+
+    .container{
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 800px) {
+
+    header{
+        background-image: none;
+        background-color: #432620;
+    }
+}

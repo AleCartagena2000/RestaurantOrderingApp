@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant App</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ac4dc93457.js" crossorigin="anonymous"></script>
+
+    <!-- Jost Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Smythe Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <h1 class="title">Alejandro's Diner</h1>
+            <p class="title-subheading">The best burgers and pizzas in town.</p>
+        </div>
+    </header>
+
+    <div class="menu-items" id="menu-items">
+        <!-- Rendered In app.js -->
+    </div>
+
+    <div class="hidden order-items" id="order-items">
+        <div class="container">
+            <h3 class="order-items-title">Your Order</h3>
+            <ul class="order-items-list" id="order-items-list">
+
+            </ul>
+            <div class="total-price-container">
+                <p class="price-text">Total Price:</p>
+                <p class="price" id="price"></p>
+            </div>
+            <button class="btn complete-order-btn" id="complete-order-btn">Complete Order</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <h2 class="modal-title">Enter card details</h2>
+        <form id="modal-form" action="">
+            <input type="text" name="fullName" placeholder="Enter your full name" required>
+            <input type="text" name="cardNumber" placeholder="Enter card number" required>
+            <input class="last-input" type="text" name="cvv" placeholder="Enter CVV" required>
+            <button type="submit" class="btn modal-btn" id="modal-btn">Pay</button>
+        </form>
+    </div>
+
+
+
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
