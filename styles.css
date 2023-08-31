@@ -37,7 +37,6 @@ header{
 .fa-solid{
     cursor: pointer;
     opacity: 0.3;
-    
 }
 
 .fa-solid:hover,
@@ -95,6 +94,10 @@ header{
 .plus-icon{
     align-self: center;
     font-size: 32px;
+}
+
+.item-description{
+    margin-right: 1em;
 }
 
 /* End of Menu item Styles */
