@@ -5,10 +5,12 @@ const completeOrderBtn = document.getElementById('complete-order-btn')
 const plusIcons = document.getElementsByClassName('fa-solid')
 const modalForm = document.getElementById('modal-form')
 
+let orderIsSubmitted = false
 let totalPrice = 0
 let orderItemsArray = []
 
 modalForm.addEventListener('submit', function(e) {
+    orderIsSubmitted = true
     e.preventDefault()
     const modalFormData = new FormData(modalForm)
     
@@ -29,6 +31,7 @@ modalForm.addEventListener('submit', function(e) {
     menuItemsContainer.innerHTML = menuItemsHtml
 
     disablePlusIcons()
+    
 
 })
 
@@ -44,7 +47,7 @@ document.addEventListener('click', function(e) {
         showModal()
         disablePlusIcons()
     }
-    else if (!modal.contains(e.target) && e.target !== completeOrderBtn) {
+    else if (!modal.contains(e.target) && e.target !== completeOrderBtn && !orderIsSubmitted) {
         hideModal()
         enablePlusIcons()
     }
